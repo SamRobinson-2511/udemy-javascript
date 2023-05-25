@@ -101,6 +101,63 @@ const number = 242; //browser converts number to string
 console.log(`${name1}${number}`);
 
 
+//Number(): converts anything passed in to a number 
+const myString = "123";
+const myNum = Number(myString);
+console.log(typeof myNum);
+
+//toString()
+const myNum2 = 123;
+const myString2 = myNum2.toString();
+console.log(typeof myString2);
+
+//Including expressions in strings 
+const song = "Fight the Youth";
+const score = 9;
+const highestScore = 10;
+const output = `I like the song ${song}. I gave it a score of ${(score / highestScore) * 100}%`;
+console.log(output);
+
+//Multi-line strings
+const output2 = `I like the song.
+I gave it a score of 90%`;
+//string methods
+
+//.toUpperCase()
+console.log(output2.toUpperCase());
+//.toLowerCase()
+console.log(output2.toLowerCase())
+//.trim() removes trailing white space 
+console.log(output2.trim())
+//length
+console.log(output2.length)
+//slice
+console.log(output2.slice(0, 10));
+console.log(output2.slice(16));
+console.log(output2.slice(-24));
+console.log("baseball".slice(4))
+console.log("$50.60".slice(1))
+//substring: start and end values less than 0 are treated as 0
+//if second value is omitted, the rest of the string will be sliced
+console.log(output2.substring(7, 13))
+
+//replace()
+let annoyingLaugh = "teehee so funny! teehee!"
+console.log(annoyingLaugh.replace("teehee", "haha")) //use regex to replace all
+
+//more string methods: https://www.udemy.com/course/javascript-beginners-complete-tutorial/learn/lecture/16762172#content
+//.indexOf(): case sensitive 
+let tvShow = "catdog"; 
+console.log(tvShow.indexOf('cat'));
+console.log(tvShow.indexOf('dog'));
+console.log(tvShow.indexOf('z'));
+console.log('baseball'.indexOf('ball'));
+
+
+//MDN template literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+
+
 
 
 
